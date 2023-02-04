@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Greenhouse Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Greenhouse Dashboard</h1>
+
+  <div class="values-container">
+    <div class="value-card">
+      <h3 class="value-card-title">Temperature</h3>
+      <p id="temperature-value" class="value-card-text">--</p>
+    </div>
+    <div class="value-card">
+      <h3 class="value-card-title">Humidity</h3>
+      <p id="humidity-value" class="value-card-text">--</p>
+    </div>
+    <div class="value-card">
+      <h3 class="value-card-title">Soil Moisture</h3>
+      <p id="soil-moisture-value" class="value-card-text">--</p>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="chart">
+      <h3>Temperature</h3>
+      <canvas id="temperatureChart"></canvas>
+    </div>
+    <div class="chart">
+      <h3>Humidity</h3>
+      <canvas id="humidityChart"></canvas>
+    </div>
+    <div class="chart">
+      <h3>Soil Moisture</h3>
+      <canvas id="soilMoistureChart"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
